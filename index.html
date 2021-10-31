@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Scaleway</title>
+    <link href="./styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/d9ef93fd4d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="banner">
+
+      <p>
+        🆕 Use Kubernetes Kosmos to launch pods through multiple cloud providers
+        & streamline the availability of your K8s workload 🚀
+      </p>
+
+    </div>
+    <div class="flex">
+      <nav class="nav">
+        <img class="logo" src="./images/logo.png" />
+        <div class="project_d">Project dashboard</div>
+        <div>
+          <div class="compute">
+          <div><i class="fas fa-memory"></i><h28 class="glbH28" >Compute</h28></div><div><i class="fas fa-chevron-up"></i></div>
+          </div>
+          <ul>
+            <li><a href="#">Instances</a></li>
+            <li><a href="#">Apple silicon</a></li>
+            <li><a href="#">Bare Metal</a></li>
+            <li><a href="#">Kubernetes</a></li>
+            <li><a href="#">Functions</a></li>
+            <li><a href="#">Containers</a></li>
+          </ul>
+        </div>
+        <div>
+        <div class="storage">
+          <div><i class="fas fa-hdd"></i><h28 class="glbH28">Storage</h28></div><div><i class="fas fa-chevron-up"></i></div>
+        </div>
+          <ul>
+            <li><a href="#">Object Storage</a></li>
+            <li><a href="#">Database</a></li>
+          </ul>
+        </div>
+        <div>
+        <div class="vpc">
+        <div><i class="fas fa-cloud"></i><h28 class="glbH28">VPC</div> <div><i class="fas fa-chevron-up"></i></div>
+        </div>
+          <ul>
+            <li><a href="#">Private Network</a></li>
+            <li><a href="#">Public Gateway</a></li>
+          </ul>
+        </div>
+        <div>
+        <div class="network">
+          <div><i class="fas fa-globe"></i><h28 class="glbH28">Network </div><div><i class="fas fa-chevron-up"></i></div>
+        </div>
+          <ul>
+            <li><a href="#">Load Balancer</a></li>
+            <li><a href="#">DNS</a></li>
+          </ul>
+        </div>
+        <div>
+        <div class="tools">
+          <div><i class="fas fa-tools"></i><h28 class="glbH28">Tools</h28></div> <div><i class="fas fa-chevron-up"></i></div>
+        </div>
+          <ul>
+            <li><a href="#">Container Registry</a></li>
+          </ul>
+        </div>
+        <div>
+        <div class="iot">
+          <div><i class="fas fa-sun"></i><h28 class="glbH28">Iot Station</h28></div> <div><i class="fas fa-chevron-up"></i></div>
+        </div>
+          <ul>
+            <li><a href="#">IoT Hub</a></li>
+          </ul>
+        </div>
+        <div class="others">
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Abuse</a></li>
+            <li><a href="#">Documentiation</a></li>
+            <li><a href="#">Feature Request</a></li>
+            <li><a href="#">Dedibox Console</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="mainpage">
+        <header class="header">
+          <select>
+            <option value="default">default</option>
+            <option value="other">other</option>
+          </select>
+          <div class="user">
+            <select>
+              <option value="create">Create</option>
+              <option value="connection">Connection</option>
+            </select>
+            <div class="lr">
+              <i class="far fa-life-ring"></i>
+            </div>
+            <p>Organisation:<br />nine1000</p>
+            <div class="ni">
+              <p>NI</p>
+            </div>
+            <i class="fas fa-chevron-down"></i>
+          </div>
+        </header>
+        <div class="b2b">
+          <p><i class="fas fa-chevron-left"></i>Back to buckets</p>
+        </div>
+        <main class="main">
+          <div class="title_mainpage">
+            <h2>Create a bucket</h2>
+          </div>
+          <div class="glbDiv">
+            <h3 class="glbH3 N1">Name your bucket</h3>
+            <input
+              type="text"
+              name="name_bucket"
+              placeholder="Bucket name"
+              required
+              minlength="4"
+              maxlength="10"
+              size="75"
+            />
+            <p class="bn_info"><i class="fas fa-info-circle"></i>   Your bucket name can only contain the following characters (min 3) :
+            lowercase letters, digits, periods(.) and hyphens (-)</p>
+          </div>
+          <div class="glbDiv">
+            <h3 class="glbH3 N2">Choose a region</h3>
+            <p><h6>A region refers to the geographical location in which your bucket will be created.</h6></p>
+            <div class="cities">
+              <div class="city"><img src="images/france.svg"/><p>Paris</p></div>
+              <div class="city"><img src="images/amsterdam.svg"/><p>Amsterdam</p></div>
+              <div class="city"><img src="images/varsovie.svg"/><p>Warsow</p></div>
+            </div>
+          </div>
+          <div class="glbDiv">
+            <h3 class="glbH3 N3">Set your Bucket Visibility</h3>
+            <div class="bucketVisibility">
+              <p>Bucket Visibility specifies whether the list of objects in the 
+                <input type="radio" /> Public
+                <input type="radio" class="check" checked/>Private
+              </p>
+            </div>
+          </div>
+          <div class="glbDiv">
+            <h3 class="glbH3 N4">
+              Estimated Cost
+            </h3>
+              <p>
+                <h6 class = "summary">This summary provides a cost estimation based on your configuration,
+                  the amount of time you expect to use the resource for, and the scale of your expected usage. 
+                  For the purposes of this calculation, we consider that 1 month equals to 730 hours.
+                </h6>
+              </p>
+            <div class="alert">
+              <i class="fas fa-exclamation-triangle"></i>
+              <p>
+                Important notice: Chia farming on Scaleway Object Storage that occurs without prior authorization will be billed
+                at €0.08 per GB. Read <a href="#">our blogspot</a> to learn more.
+              </p>
+                
+            </div>
+            <div class="tab">
+              <table class="table_ce">
+                <tr scope="est">
+                  <th class="estimation"><i class="fas fa-calculator"></i>Estimated cost</th>
+                  <td class="empty"></td>
+                  <td class="selects">
+                    <select>
+                      <option value = "1">
+                        1
+                      </option>
+                      <option value = "2">
+                        2
+                      </option>
+                    </select>
+                    <select>
+                      <option value = "hour">
+                        Hour
+                      </option>
+                      <option value = "minute">
+                        Minute
+                      </option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="region">Region</th>
+                  <td><p class="text"><img src="images/france.svg"/> Paris </p></td>
+                  <td class="cost"><p> €0.00</p></td>
+                </tr>
+                <tr>
+                  <th scope="bucket visibility">Bucket visibility</th>
+                  <td><p class="text"><i class="fas fa-lock"></i>Private</p></td>
+                  <td class="cost"><p> €0.00</p></td>
+                </tr>
+                <tr>
+                  <th scope="storage">Storage<p><em>75 GB free storage</em></p></th>
+                    <td><p class="txt"><input type="text" value="75"/>GB</p></td>
+                    <td class="cost"><p> €0.00</p></td>
+                </tr>
+                <tr>
+                  <th scope="transfer" >Transfer<p><em>75 GB free storage</em></p></th>
+                    <td><p class="text"><input type="text" value="75"/>GB</p></td>
+                    <td class="cost"><p> €0.00</p></td>
+                </tr>
+                <tr>
+                    <td class="empty"></td>
+                    <td class="empty"></td>
+                    <td class="total"><p> €0.00</p></td>
+                  </tr>
+                </table>
+            </div>
+            <div class="c_a_b">
+              <p>Create a bucket</p>
+            </div>
+            
+          </div>
+        <footer>
+          <a href="#">Blog <i class="fas fa-external-link-alt"></i></a>
+          <a href="#">Pricing <i class="fas fa-external-link-alt"></i></a>
+          <a href="#">Careers <i class="fas fa-external-link-alt"></i></a>
+          <a href="#">Privacy <i class="fas fa-external-link-alt"></i></a>
+          <a href="#">Cookies <i class="fas fa-external-link-alt"></i></a>
+          <a href="#">API <i class="fas fa-external-link-alt"></i></a>
+        </footer>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

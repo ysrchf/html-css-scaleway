@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+/****** banner ******/
+.banner {
+  background-color: #e4edff;
+  color: #3f6ed8;
+  height: 75px;
+  width: 100%;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.banner p {
+  margin: 0 10px;
+}
+
+/******** header ********/
+
+header {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+header select:not(.user select) {
+  height: 80%;
+  width: 200px;
+  border-radius: 5px;
+  border: solid 1px #d4dae7;
+  margin-left: 10px;
+}
+
+.user {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.user select {
+  width: 100px;
+  background-color: #45d6b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.user p {
+  text-align: right;
+}
+
+.user i:not(.lr i) {
+  color: gray;
+  margin-left: -4px;
+}
+
+.user * {
+  margin: 0 10px;
+}
+
+.ni {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a365f6;
+  color: white;
+}
+
+/****** nav ******/
+
+.logo {
+  margin: 7.5%;
+}
+
+nav {
+  width: 15%;
+  height: 100%;
+  background-color: rgb(246, 245, 247);
+  box-sizing: border-box;
+  padding: 20px;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+
+.compute,
+.storage,
+.vpc,
+.network,
+.tools,
+.iot {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+li {
+  list-style-type: none;
+  font-size: small;
+}
+
+.lr {
+  width: 45px;
+  border-radius: 5px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px #d4dae7;
+}
+
+.lr i {
+  font-size: 25px;
+  color: #d4dae7;
+}
+
+.others a {
+  color: #551a8b;
+}
+
+a {
+  text-decoration: none;
+  color: #a6aab3;
+}
+
+.glbH28 {
+  color: #551a8b;
+  font-size: medium;
+}
+
+/****** main page ******/
+
+.mainpage {
+  width: 85%;
+  height: 100%;
+}
+
+main {
+  flex-basis: 85%;
+  height: 100%;
+  background-color: white;
+  padding: 0 10%;
+  text-align: center;
+}
+.b2b p {
+  color: #551a8b;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.glbDiv {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.glbH3 {
+  font-weight: 400;
+  margin-top: 0px;
+  color: rgb(21, 26, 45);
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+
+.glbH3::before {
+  display: inline-block;
+  background-color: rgb(74, 79, 98);
+  color: rgb(255, 255, 255);
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.N1::before {
+  content: "1";
+  margin-right: 15px;
+}
+.N2::before {
+  content: "2";
+  margin-right: 15px;
+}
+.N3::before {
+  content: "3";
+  margin-right: 15px;
+}
+.N4::before {
+  content: "4";
+  margin-right: 15px;
+}
+
+/******* create a bucket ******/
+.c_a_b {
+  width: 745px;
+  border: none;
+  border-radius: 5px;
+  background-color: #45d6b5;
+  color: white;
+  justify-content: center;
+  display: flex;
+  margin: 15px;
+  padding: 5px;
+  font-size: small;
+  margin-left: 150px;
+  margin-bottom: 150px;
+}
+
+.bn_info:not(i) {
+  color: #a6aab3;
+  text-align: left;
+}
+
+/****** choose a region ******/
+.city {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 45px;
+  border: solid #551a8b 1px;
+  border-radius: 5px;
+  align-items: center;
+  margin: 0 10px;
+}
+.city img {
+  width: 15px;
+  margin-right: 10px;
+}
+.cities {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/****** bucket visibility *******/
+
+.bucketVisibility {
+  width: 80%;
+  height: 45px;
+  border: solid 1px #d4dae7;
+  border-radius: 5px;
+  justify-content: center;
+  margin: 0 auto;
+}
+.bucketVisibility p {
+  display: flex;
+  text-align: left;
+  padding-left: 15px;
+  justify-content: center;
+}
+
+td:not(.cost, .total, .empty, .selects),
+th:not(.estimation, .empty) {
+  border-bottom: 1px solid #d4dae7;
+  padding: 10px;
+  text-align: left;
+  border-radius: 5px;
+}
+th i {
+  color: #551a8b;
+  margin-right: 5px;
+  font-weight: bold;
+}
+
+th {
+  text-align: left;
+  border-radius: 5px;
+}
+
+/******* Estimated Cost *******/
+
+.alert {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: #ffe1e7;
+  color: #f16681;
+  width: 80%;
+  height: 45px;
+  border-radius: 5px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.summary {
+  text-align: left;
+}
+
+.estimation {
+  padding-left: 15px;
+  border-radius: 5px;
+}
+
+.cost {
+  border-left: 1px solid #d4dae7;
+  border-bottom: 1px solid #d4dae7;
+  padding-right: 15px;
+  background-color: #e3e7f0da;
+  width: 150px;
+  text-align: right;
+  border-radius: 5px;
+}
+.selects {
+  border-left: 1px solid #d4dae7;
+  padding-left: 15px;
+  background-color: #e3e7f0da;
+  width: 150px;
+  text-align: right;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+table:not(.cost, .total, .empty, .selects) {
+  border: 1px solid #d4dae7;
+  border-radius: 5px;
+  font-family: sans-se rif;
+  font-size: 0.8rem;
+  padding: 0 15px;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  width: 750px;
+  margin-left: 150px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.table_ce img {
+  width: 15px;
+  margin-right: 10px;
+}
+
+.total {
+  text-align: right;
+  border-left: 1px solid #d4dae7;
+  background-color: #e3e7f0da;
+  padding: 10px;
+  color: #551a8b;
+  font-size: x-large;
+  border-radius: 5px;
+  font-weight: bolder;
+}
+
+em {
+  color: #551a8b;
+}
+
+/******** footer ********/
+
+footer {
+  height: 100px;
+  align-items: flex-end;
+}
+
+footer a {
+  margin: 0 20px 20px;
+  font-size: 14px;
+}
